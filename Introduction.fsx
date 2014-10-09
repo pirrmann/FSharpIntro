@@ -76,9 +76,6 @@ type Employee =
 // type inference
 let jdoe = {First="John";Last="Doe"}
 let worker = Worker jdoe
-(*** hide ***)
-open System.IO
-let path = __SOURCE_FILE__
 (**
 
 ---
@@ -96,12 +93,13 @@ let text = sprintf "Equal? %A"  (person1 = person2)
 let add2times3 = (+) 2 >> (*) 3
 let result = add2times3 5
 (*** include-value: result ***)
-
 (**
+
+and the REPL!
 
 ***
 
-Isn't F# just for math & compilers?
+###Isn't F# just for math & compilers?
 
 No.
 
@@ -454,14 +452,31 @@ let sortedEvenProductsEvaluated = sortedEvenProducts |> Seq.toArray
 - Units of measures
 - Active patterns
 - Quotations
+- Async workflows (async on steroids)
 - Mailbox processors (actors)
 - Computation expressions
 - Type providers...
 
-
 and that's only F# 3.1, wait for 4.0!
 
 ***
+
+##Forgotten bullets
+
+- IDE Integration? (it's getting better all the time)
+- Testing story (FsUnit, FsCheck, TickSpec)
+- GUI / Web dev?
+- Cross-platform & Xamarin
+- DDD / Event sourcing (@thinkb4coding)
+- ALT.NET Coding breakfast
+
+***
+
+## Questions?
+
+Don't be shy
+
+---
 
 ##Resources
 
